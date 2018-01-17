@@ -14,7 +14,7 @@ render() {
     })
   })
   return (
-    <div>
+    <div id="board">
       {position}
     </div>
   )

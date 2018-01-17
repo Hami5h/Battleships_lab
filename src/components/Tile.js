@@ -4,7 +4,7 @@ class Tile extends Component {
 
   render (){
     return (
-      <div>
+      <div id="tile">
         {this.props.tile}
       </div>
     )

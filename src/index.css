@@ -2,4 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
+
+}
+
+#board{
+  display: inline-grid;
+  grid-template-columns: repeat(10, auto) ;
+}
+
+#tile {
+  background-color: purple;
+  width: 25px;
+  height: 25px;
+  color: blue;
+  border-style: double;
+  border-color: black;
 }
