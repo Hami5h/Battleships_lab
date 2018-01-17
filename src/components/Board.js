@@ -2,23 +2,18 @@ import React, {Component} from 'react';
 import Tile from './Tile.js'
 
 class Board extends Component {
-  constructor(props){
-    super(props);
-  }
-
-render() {
-  const position = this.props.positions.map(row => {
-    return row.map(tile => {
-      return <Tile tile={tile}/>
-
+  render() {
+    const position = this.props.positions.map((row, outerIndex) => {
+      return row.map((tile, innerIndex) => {
+        return <Tile key={'' + outerIndex + innerIndex} outerIndex={outerIndex} innerIndex={innerIndex} tile={tile}  />
+      })
     })
-  })
-  return (
-    <div id="board">
-      {position}
-    </div>
-  )
-}
+    return (
+      <div id="board">
+        {position}
+      </div>
+    )
+  }
 
 }
 

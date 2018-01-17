@@ -25,6 +25,7 @@ class Battleship extends Component {
   render() {
     return (
       <div>
+        <h1>Das React</h1>
         <Board positions={this.state.positions}/>
       </div>
     );

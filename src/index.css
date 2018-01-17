@@ -12,10 +12,26 @@ body {
 }
 
 #tile {
-  background-color: purple;
-  width: 25px;
-  height: 25px;
-  color: blue;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  color: yellow;
   border-style: double;
   border-color: black;
+}
+
+#missed {
+background-image: url('https://media.giphy.com/media/VEojEu9YingQ/giphy.gif');
+background-size: cover;
+background-position: center;
+}
+
+
+#smashed {
+
+  background-image: url('https://media.giphy.com/media/XUFPGrX5Zis6Y/giphy.gif');
+  background-size: cover;
+  background-position: center;
+
+
 }
